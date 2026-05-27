@@ -12,10 +12,10 @@ class HomeController < ApplicationController
           "GET /reactions/:difficulty",
           "GET /reactions/:classification",
           "POST /reactions",
-          "GET /compounds",
-          "POST /compounds"
+          "GET /compounds (maybe)",
+          "POST /compounds (maybe)"
         ],
-      }
+      },
       contributors: [
         "Shujaat Azim",
         "Malcome Fein",
