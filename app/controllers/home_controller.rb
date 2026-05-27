@@ -4,16 +4,18 @@ class HomeController < ApplicationController
       app_name: "Organiq API",
       version: "1.0",
       description: "Backend/API for Organiq!",
-      available_endpoints: [
-        "GET /reactions",
-      ],
-      upcoming_endpoints: [
-        "GET /reactions/:difficulty",
-        "GET /reactions/:classification",
-        "POST /reactions",
-        "GET /compounds",
-        "POST /compounds"
-      ],
+      endpoints: {
+        available: [
+          "GET /reactions",
+        ],
+        upcoming: [
+          "GET /reactions/:difficulty",
+          "GET /reactions/:classification",
+          "POST /reactions",
+          "GET /compounds",
+          "POST /compounds"
+        ],
+      }
       contributors: [
         "Shujaat Azim",
         "Malcome Fein",
