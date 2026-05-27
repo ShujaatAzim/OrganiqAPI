@@ -1,9 +1,23 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+Reaction.create!(
+  formula: "CH3CH2OH + _____ → CH2=CH2 + H2O",
+  classification: "reactant_missing",
+  difficulty: "easy",
+  choices: [
+    {
+      formula: "H2SO4",
+      correct: true
+    },
+    {
+      formula: "HCl",
+      correct: false
+    },
+    {
+      formula: "NaOH",
+      correct: false
+    },
+    {
+      formula: "HBr",
+      correct: false
+    }
+  ]
+)
