@@ -13,6 +13,12 @@ class HomeController < ApplicationController
         "POST /reactions",
         "GET /compounds",
         "POST /compounds"
+      ],
+      contributors: [
+        "Shujaat Azim",
+        "Malcome Fein",
+        "Carolyn Whelpley",
+        "Istafa Marshall"
       ]
     }
   end
