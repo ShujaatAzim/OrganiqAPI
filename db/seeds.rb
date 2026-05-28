@@ -1,3 +1,10 @@
+# This is used to delete previous seed data. For some reason it keeps the ID increments even if the db is dropped.
+Reaction.delete_all
+ActiveRecord::Base.connection.execute(
+  "DELETE FROM sqlite_sequence WHERE name='reactions'"
+)
+
+# DB Seeds
 Reaction.create!(
   formula: "CH3CH2OH + _____ → CH2=CH2 + H2O",
   classification: "reactant_missing",
